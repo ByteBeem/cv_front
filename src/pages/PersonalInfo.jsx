@@ -8,7 +8,10 @@ const PersonalInfo = () => {
   const [personalInfo, setPersonalInfo] = useState({
     name: '',
     contact: '',
-    bio: ''
+    bio: '',
+    firstnames:'',
+    title:'',
+    lastname:'',
   });
 
   useEffect(() => {
@@ -46,7 +49,7 @@ const PersonalInfo = () => {
           <input
             type="text"
             name="title"
-            value={personalInfo.name}
+            value={personalInfo.title}
             onChange={handleChange}
             required
           />
@@ -56,7 +59,7 @@ const PersonalInfo = () => {
           <input
             type="text"
             name="firstnames"
-            value={personalInfo.name}
+            value={personalInfo.firstnames}
             onChange={handleChange}
             required
           />
@@ -65,8 +68,8 @@ const PersonalInfo = () => {
           Last Name:
           <input
             type="text"
-            name="name"
-            value={personalInfo.name}
+            name="lastname"
+            value={personalInfo.lastname}
             onChange={handleChange}
             required
           />
