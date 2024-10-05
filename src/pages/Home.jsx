@@ -1,18 +1,17 @@
 import React, { useEffect } from 'react';
 
-import './Home.css'; // Import your CSS file for styling
+import './Home.css'; 
 import Typed from 'typed.js';
 import about from '../assets/young.jpg'
-
 
 
 const Home = () => {
 
     useEffect(() => {
         const typed = new Typed('.auto-type', {
-          strings: ['Welcome to the CV website of Nhlakanipho Eric Shazi!.'],
-          typeSpeed: 175,
-          backSpeed: 175,
+          strings: ['Welcome to the CV  of Nhlakanipho Eric Shazi!.'],
+          typeSpeed: 100,
+          backSpeed: 160,
           loop: true
         });
 
